@@ -1,0 +1,370 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#ff5722;
+}
+
+.logo i{
+    margin-right:8px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff5722;
+}
+
+.cart-btn{
+    background:#ff5722;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:30px;
+}
+
+.cart-btn:hover{
+    color:#fff;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+    min-height:90vh;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:55px;
+    line-height:70px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#666;
+    margin-bottom:35px;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff5722;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e64a19;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:90%;
+    max-width:520px;
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+section h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+/* ===========================
+   CATEGORIES
+=========================== */
+
+.categories{
+    padding:70px 8%;
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:25px;
+}
+
+.category{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    font-size:35px;
+}
+
+.category:hover{
+    background:#ff5722;
+    color:#fff;
+    transform:translateY(-8px);
+}
+
+.category p{
+    margin-top:12px;
+    font-size:18px;
+}
+
+/* ===========================
+   FOOD SECTION
+=========================== */
+
+.popular{
+    padding:70px 8%;
+}
+
+.food-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.food-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.food-card:hover{
+    transform:translateY(-10px);
+}
+
+.food-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.food-card h3{
+    margin:15px;
+}
+
+.food-card p{
+    margin:0 15px;
+    color:#ff5722;
+    font-weight:700;
+    font-size:20px;
+}
+
+.food-card button{
+    margin:20px 15px;
+    width:calc(100% - 30px);
+    padding:13px;
+    border:none;
+    border-radius:8px;
+    background:#ff5722;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.food-card button:hover{
+    background:#e64a19;
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.features{
+    padding:70px 8%;
+}
+
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.feature{
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    font-size:45px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+}
+
+.feature h3{
+    margin-top:20px;
+    font-size:22px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#222;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+footer p{
+    margin-top:10px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:42px;
+    line-height:55px;
+}
+
+.hero-image{
+    margin-bottom:40px;
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    padding:40px 6%;
+}
+
+.hero-content h1{
+    font-size:34px;
+    line-height:45px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+section h2{
+    font-size:30px;
+}
+
+.food-card img{
+    height:200px;
+}
+
+}
+
+@media(max-width:480px){
+
+.logo{
+    font-size:24px;
+}
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.btn{
+    padding:12px 25px;
+}
+
+.category{
+    padding:25px;
+}
+
+.feature{
+    padding:30px;
+}
+
+}

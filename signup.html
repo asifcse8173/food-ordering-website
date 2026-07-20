@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styling/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h1>Create Account</h1>
+            <p class="subtitle">Join us today</p>
+
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="your Name"
+                        required
+                    >
+                    <span class="error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="you@example.com"
+                        required
+                    >
+                    <span class="error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="At least 8 characters"
+                        required
+                    >
+                    <span class="error" id="passwordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        name="confirmPassword" 
+                        placeholder="Confirm your password"
+                        required
+                    >
+                    <span class="error" id="confirmError"></span>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                    <span class="error" id="termsError"></span>
+                </div>
+
+                <button type="submit" class="btn-submit">Sign Up</button>
+
+                <div class="success-message" id="successMessage">
+                    ✓ Account created successfully!
+                </div>
+            </form>
+
+            <p class="login-link">
+                Already have an account? <a href="#">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="styling/functionality/signup.js"></script>
+</body>
+</html>
