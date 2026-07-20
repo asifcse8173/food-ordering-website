@@ -2,7 +2,9 @@
 
 A modern Full Stack Food Ordering Web Application built using HTML, CSS, JavaScript, Node.js, Express.js, and MySQL. The application allows users to browse food items, filter by category, add items to the cart, place orders, and store order details in a MySQL database.
 
-![foodie.png…]()
+
+![Food Ordering Website](images/foodie.png)
+
 
 
 
