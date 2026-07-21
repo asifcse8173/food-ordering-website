@@ -144,34 +144,28 @@ placeOrderBtn.addEventListener("click", async () => {
     };
 
     console.log(orderData);
+try {
 
-    try {
+    const response = await fetch("https://food-ordering-website-2u68.onrender.com/orders", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(orderData)
+    });
 
-const response = await fetch("https://food-ordering-website-2u68.onrender.com/orders", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify(orderData)
-});
+    const data = await response.json();
 
+    alert(data.message);
 
-        const data = await response.json();
+    localStorage.removeItem("cart");
 
-        alert(data.message);
+    window.location.href = "index.html";
 
-        localStorage.removeItem("cart");
+} catch (error) {
 
-        window.location.href = "index.html";
+    console.error(error);
 
-    }
+    alert("Server Error");
 
-    catch (error) {
-
-        console.log(error);
-
-        alert("Server Error");
-
-    }
-
-});
+}
