@@ -147,7 +147,7 @@ placeOrderBtn.addEventListener("click", async () => {
 
     try {
 
-        const response = await fetch("http://localhost:5000/orders", {
+        const response = await fetch("fetch("https://food-ordering-website-2u68.onrender.com/menu"), {
 
             method: "POST",
 
