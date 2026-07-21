@@ -154,14 +154,7 @@ const response = await fetch("https://food-ordering-website-2u68.onrender.com/or
     },
     body: JSON.stringify(orderData)
 });
-});
-    body: JSON.stringify(orderData)
-});
-            },
 
-            body: JSON.stringify(orderData)
-
-        });
 
         const data = await response.json();
 
